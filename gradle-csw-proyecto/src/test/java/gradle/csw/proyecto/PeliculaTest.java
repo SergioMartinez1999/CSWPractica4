@@ -11,6 +11,7 @@ public class PeliculaTest {
     public Pelicula peliClonacion = peliculaTest1.clone();
     public Pelicula peliReferenciada = peliculaTest1;
     public Pelicula peli2ClonacionImplicita = peliculaTest2.cloneExplicito();
+    public Pelicula peliculaTest3;
     
     //Assertos a probar
     /*
