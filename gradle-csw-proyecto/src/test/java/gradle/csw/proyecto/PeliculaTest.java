@@ -35,7 +35,7 @@ public class PeliculaTest {
     //assertTrue no tiene exito (no encuentra fallo
     @Test
     public void testAssertTrueTrue() {
-        assertTrue(peliculaTest1.compararAnyo(2010));
+        assertFalse(peliculaTest1.compararAnyo(2010));
     }
 
     //assertTrue con exito
