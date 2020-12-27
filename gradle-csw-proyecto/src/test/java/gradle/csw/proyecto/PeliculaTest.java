@@ -12,7 +12,7 @@ public class PeliculaTest {
     public Pelicula peliReferenciada = peliculaTest1;
     public Pelicula peli2ClonacionImplicita = peliculaTest2.cloneExplicito();
     
-  //Assertos a probar
+    //Assertos a probar
     /*
      * assertEquals
      * assertTrue
@@ -108,7 +108,7 @@ public class PeliculaTest {
         assertArrayEquals(lista1, lista2);
     }
     
-  //assertArrayEquals no tiene exito
+  //assertArrayEquals no tiene exito!
     @Test
     public void testAssertArrayEqualsFalse() {
         Pelicula pIgual;
