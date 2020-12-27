@@ -108,7 +108,7 @@ public class PeliculaTest {
         assertArrayEquals(lista1, lista2);
     }
     
-  //assertArrayEquals no tiene exito!
+  //assertArrayEquals no tiene exito
     @Test
     public void testAssertArrayEqualsFalse() {
         Pelicula pIgual;
