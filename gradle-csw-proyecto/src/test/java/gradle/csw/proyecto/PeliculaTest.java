@@ -25,24 +25,11 @@ public class PeliculaTest {
      * assertArrayEquals
      * 
      */
-    
-    //assertEquals con exito (encuentra un fallo)
-    @Test
-    public void assertEqualsOk() {
-        assertEquals("name: Hulk, Duracion: 180", peliculaTest2.muestraPeli());
-    }
 
     //assertTrue no tiene exito (no encuentra fallo
     @Test
     public void testAssertTrueTrue() {
-        assertFalse(peliculaTest1.compararAnyo(2010));
-    }
-
-    //assertTrue con exito
-    @Test
-    public void testAssertTrueFalse() {
-        peliculaTest2.setAnyoestreno(2000);
-        assertTrue(peliculaTest2.compararAnyo(1950));
+    	assertTrue(peliculaTest1.compararAnyo(2010));
     }
     
   //assertFalse no tiene exito
@@ -51,62 +38,22 @@ public class PeliculaTest {
         assertFalse(peliculaTest1.comprobarAlquilada());
     }
     
-    //assertFalse con exito
-    @Test
-    public void testAssertFalseTrue() {
-        peliculaTest2.alquilar();
-        assertFalse(peliculaTest2.comprobarAlquilada());
-    }
-    
     //assertNotNull no tiene exito
     @Test
     public void testAssertNotNullFalse() {
         assertNotNull(peliculaTest1);
     }
     
-  //assertNotNull con exito
-    @Test
-    public void testAssertNotNullTrue() {
-        peliculaTest2 = null;
-        assertNotNull(peliculaTest2);
-    }
-  
-    //assertSame con exito
-    @Test
-    public void testAssertSameFalse() {
-        Pelicula clonacion = peliculaTest1.clone();
-        assertSame(peliculaTest1, clonacion);
-    }
-    
-    @Test
-    public void testAssertSameEquals() {
-        assertEquals(peliClonacion.muestraPeli(), peliculaTest1.muestraPeli());
-    }
-    
     //assertSame no con exito
     @Test
     public void testAssertSameTrue() {
-        assertSame(peliculaTest1, peliReferenciada);
-    }
-    
-    //assertNotSame con exito
-    @Test
-    public void testAssertNotSameFalse() {
-        assertNotSame(peli2ClonacionImplicita, peliculaTest2);
+        assertNotSame(peliculaTest1, peliReferenciada);
     }
     
     //assertNotSame no tiene exito
     @Test
     public void testAssertNotSameTrue() {
         assertNotSame(peliClonacion, peliculaTest1);
-    }
-    
-    //assertArrayEquals con exito
-    @Test
-    public void testAssertArrayEqualsTrue() {
-        Pelicula lista1[] = {new Pelicula(peliculaTest1)};
-        Pelicula lista2[] = {peliculaTest1};
-        assertArrayEquals(lista1, lista2);
     }
     
   //assertArrayEquals no tiene exito
